@@ -15,11 +15,11 @@ class Director < ApplicationRecord
 
   has_many(:filmography,{:class_name=> "Movie"})
 
-  def filmography
-    key = self.id
+  # def filmography
+  #   key = self.id
 
-    the_many = Movie.where({ :director_id => key })
+  #   the_many = Movie.where({ :director_id => key })
 
-    return the_many
-  end
+  #   return the_many
+  # end
 end
